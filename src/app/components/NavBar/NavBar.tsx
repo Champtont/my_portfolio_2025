@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import styles from './NavBar.module.css'
-import CJHTLogoOutline from '@/app/assets/CJHTLogoOutline'
+//import CJHTLogoOutline from '@/app/assets/CJHTLogoOutline'
 import CJHTLogoSolid from '@/app/assets/CJHTLogoSolid'
 
 const NavBar = () => {
