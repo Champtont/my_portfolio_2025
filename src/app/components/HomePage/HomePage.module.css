@@ -1,0 +1,19 @@
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 9em;
+    padding-top: 1em;
+    padding-right: .8em;
+    padding-bottom: 2em;
+    gap: 1em;
+    height: 100%;
+}
+
+.homeHalf {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border: var(--Lion) 1pt solid;
+    position: relative;
+}

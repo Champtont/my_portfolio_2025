@@ -1,4 +1,5 @@
 import NavBar from "../components/NavBar/NavBar";
+import Footer from "../components/Footer/Footer";
 import React from 'react'
 
 const skillspage = () => {
@@ -8,6 +9,7 @@ const skillspage = () => {
         <h1>
             skillspage
         </h1>
+        <Footer/>
     </div>
   )
 }
