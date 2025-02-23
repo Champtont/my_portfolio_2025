@@ -1,11 +1,26 @@
 .nav {
     background: linear-gradient(90deg, #BB9457, #99582A);
+    mask-image: url("/waveGif.gif");
+    mask-size: cover;
+    mask-mode:luminance;
+    width: 300px;
+    mask-position: -40px;
     margin-bottom: 1em;
     position: fixed;
     left: 0;
     z-index: 1;
     color: var(--Falu_Red);
     font-weight:400;
+    transform: translateX(-300px);
+    transition: transform ease-in-out 1s;
+}
+.wavyMask {
+    width: 400px;
+    height: 100%;
+    position: fixed;
+}
+.wavyMask:hover .nav{
+    transform: translateX(0);
 }
 
 .logo {
@@ -19,8 +34,41 @@
     fill: var(--Peach);
 }
 
+.logoBox{
+    position: relative;
+}
+.littleGear {
+    position: absolute;
+    top:44%;
+    right: 77%;
+    z-index: -1;
+    animation: threeSixty infinite 6s linear;
+}
+
 .navButton {
     border-radius: 5px;
     color: var(--Bistre);
     width: 100%;
+    justify-content: center;
+}
+.navButton:hover {
+    border-left: var(--Falu_Red) 2pt solid;
+}
+
+@keyframes threeSixty {
+    0% {
+        transform: rotate(0);
+      }
+      25% {
+        transform: rotate(90deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      75% {
+        transform: rotate(270deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
 }
