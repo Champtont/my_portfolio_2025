@@ -19,18 +19,18 @@ const NavBar = () => {
         </Link>
       </div>
       <div className='flex items-center sm:flex-row sm:w-full  md:flex-col md:w-fit md:h-full'>
-        <Link href={"/skills"} className={`sm:mb-0 sm:ml-2 md:mb-2 md:ml-0 lg:mb-3 lg:ml-0`}>
-          <div className={`${styles.navButton} sm:px-3 md:px-6 lg:px-9`}>
+        <Link href={"/skills"} className={`${styles.navButton} sm:mb-0 sm:ml-2 md:mb-2 md:ml-0 lg:mb-3 lg:ml-0`}>
+          <div className={`sm:px-3 md:px-6 lg:px-9`}>
             Skills
           </div>
         </Link>
-        <Link href={"/projects"}>
-          <div className={`${styles.navButton} sm:px-3 sm:ml-3 sm:mb-0 md:px-6 md:ml-0 md:mb-3 lg:px-9`}>
+        <Link href={"/projects"} className={`${styles.navButton} sm:mb-0 md:mb-3`}>
+          <div className={`sm:px-3 sm:ml-3 md:px-6 md:ml-0  lg:px-9`}>
             Projects
           </div>
         </Link>
-        <a href="/Fullstack_Engineer_Resume.pdf" download="CourtJHTResume" className='flex items-center'>
-          <div className={`${styles.navButton} mr-2`}><BiDownload/></div>
+        <a href="/Fullstack_Engineer_Resume.pdf" download="CourtJHTResume" className={`${styles.navButton} flex items-center`}>
+          <div className={`mr-2`}><BiDownload/></div>
           <div>Resume</div>
         </a>
       </div>
