@@ -1,5 +1,5 @@
 .nav {
-    background: linear-gradient(90deg, #BB9457, #99582A);
+    background: linear-gradient(90deg, #BB9457 15%, #99582A);
     mask-image: url("/waveGif.gif");
     mask-size: cover;
     mask-mode:luminance;
@@ -8,16 +8,17 @@
     margin-bottom: 1em;
     position: fixed;
     left: 0;
-    z-index: 1;
+    z-index: 31;
     color: var(--Falu_Red);
     font-weight:400;
     transform: translateX(-300px);
     transition: transform ease-in-out 1s;
 }
 .wavyMask {
-    width: 400px;
+    width: 1.5%;
     height: 100%;
     position: fixed;
+    z-index: 30;
 }
 .wavyMask:hover .nav{
     transform: translateX(0);
@@ -50,9 +51,13 @@
     color: var(--Bistre);
     width: 100%;
     justify-content: center;
+    border-left: transparent 2pt solid;
+    transition: color ease-in-out 1s, border-left ease-in-out .5s;
 }
 .navButton:hover {
     border-left: var(--Falu_Red) 2pt solid;
+    color: var(--Falu_Red);
+    box-shadow: var(--Bistre) -50px 5px 5px;
 }
 
 @keyframes threeSixty {
@@ -71,4 +76,15 @@
       100% {
         transform: rotate(360deg);
       }
+}
+
+@keyframes shortSlideFromLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
